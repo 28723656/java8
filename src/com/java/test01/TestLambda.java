@@ -1,11 +1,10 @@
-package com.java;
+package com.java.test01;
 
 import com.java.design.MyPredicate;
 import com.java.design.impl.FilterEmployeeByAge;
 import com.java.design.impl.FilterEmployeeBySalary;
 import com.java.entity.Employee;
 import org.junit.Test;
-import org.omg.PortableInterceptor.INACTIVE;
 
 import java.util.*;
 
@@ -41,11 +40,11 @@ public class TestLambda {
 
 
     List<Employee> employees = Arrays.asList(
-            new Employee("张三", 18, 999.99),
-            new Employee("李四", 38, 6999.99),
-            new Employee("王五", 68, 3999.99),
-            new Employee("赵六", 28, 9999.99),
-            new Employee("田七", 8, 1999.99)
+            new Employee(101,"张三", 18, 999.99),
+            new Employee(102,"李四", 38, 6999.99),
+            new Employee(103,"王五", 68, 3999.99),
+            new Employee(104,"赵六", 28, 9999.99),
+            new Employee(105,"田七", 8, 1999.99)
     );
 
     // 需求1：获取当前公司中年龄大于35岁的员工信息
